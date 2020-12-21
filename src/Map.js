@@ -1,4 +1,5 @@
 import React, { useEffect }from 'react';
+import Subtitle from './components/TextSize/Subtitle';
 
 const { kakao } = window;
 const Map = () => {
@@ -30,9 +31,19 @@ const Map = () => {
         width: '300px',
         height: '300px'
     };
+    
+    const data = {
+        sub : ['서울 강남구 테헤란로 623 14층', '02-3453-3864']
+    }
+    
+
 
     return(
+        <div>
+        <div><Subtitle text={data.sub[0]}/></div>
+        <div><Subtitle text={data.sub[1]}/></div>
         <div id="myMap" style={mapStyle} />            
+        </div>
     );
 }
 
