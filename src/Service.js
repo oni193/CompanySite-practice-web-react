@@ -1,7 +1,7 @@
 import React from 'react';
-import Title from './components/TextSize/Title';
-import Subtitle from './components/TextSize/Subtitle';
-import Description from './components/TextSize/Description';
+import Title from './components/textSize/Title';
+import Subtitle from './components/textSize/Subtitle';
+import Description from './components/textSize/Description';
 
 const Service = () => {
     
