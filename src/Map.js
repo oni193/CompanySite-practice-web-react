@@ -1,5 +1,5 @@
 import React, { useEffect }from 'react';
-import Subtitle from './components/TextSize/Subtitle';
+import Subtitle from './components/textSize/Subtitle';
 
 const { kakao } = window;
 const Map = () => {
