@@ -1,5 +1,7 @@
 import React, { useEffect }from 'react';
 import Subtitle from './components/textSize/Subtitle';
+import Marker from './assets/marker.png';
+import Phone from './assets/phone.png';
 
 const { kakao } = window;
 const Map = () => {
@@ -40,7 +42,9 @@ const Map = () => {
 
     return(
         <div>
+        <img src={Marker}/>
         <div><Subtitle text={data.sub[0]}/></div>
+        <img src={Phone}/>
         <div><Subtitle text={data.sub[1]}/></div>
         <div id="myMap" style={mapStyle} />            
         </div>
