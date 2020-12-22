@@ -9,10 +9,7 @@ const Recruit = () => {
     const data = {
         title : '채용',
         sub : '파인랩을 만들어가는 사람들',
-    }
-
-    
-
+    } 
     return(
         <div>
             <div>
@@ -20,7 +17,7 @@ const Recruit = () => {
                 <Subtitle text={data.sub}/>
             </div>  
             <div>
-                <RecruitBox/>
+                {/* <RecruitBox/> */}
 
             </div>
         </div>        
