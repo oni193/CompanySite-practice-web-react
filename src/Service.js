@@ -30,6 +30,8 @@ const Service = () => {
     
     const des = ['A+ 그룹 IT 통합 관리 시스템 운영',
     '웹과 애플리케이션 개발 및 운영', '보험 IT 서비스', '쇼핑몰'];
+
+    
     return(
             <div style={serviceStyle, {color: 'red'}}>
                 <div className="serviceLeft">
