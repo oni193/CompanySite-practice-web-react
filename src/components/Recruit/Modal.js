@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 // Creating the Modal React Components
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 // Creating a Custom Modal Hook
-const useModal = () => {
-    const [isShowing, ssetIsShowing] = useState(false);
+const UseModal = () => {
+    const [isShowing, setIsShowing] = useState(false);
     // state values to store the current view state of the modal
 
     function toggle() {
@@ -14,5 +14,7 @@ const useModal = () => {
         isShowing,
         toggle
     // components has access to them
-    );
+    )
 };
+
+export default UseModal;
