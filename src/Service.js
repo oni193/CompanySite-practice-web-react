@@ -3,6 +3,7 @@ import React from 'react';
 import Title from './components/textSize/Title';
 import Subtitle from './components/textSize/Subtitle';
 import Description from './components/textSize/Description';
+import Internal from './components/service/Internal';
 
 import img0 from './assets/1.png';
 // import img1 from './assets/2.jpg';
@@ -29,7 +30,6 @@ const Service = () => {
     
     const des = ['A+ 그룹 IT 통합 관리 시스템 운영',
     '웹과 애플리케이션 개발 및 운영', '보험 IT 서비스', '쇼핑몰'];
-
     return(
             <div style={serviceStyle, {color: 'red'}}>
                 <div className="serviceLeft">
@@ -42,7 +42,6 @@ const Service = () => {
                 </div>
             </div> 
     );
-
 };
 
 export default Service;
