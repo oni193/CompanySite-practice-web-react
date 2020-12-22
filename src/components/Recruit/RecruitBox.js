@@ -1,5 +1,7 @@
 import React from 'react';
 import Body from '../textSize/Body';
+import Modal from '../Recruit/Modal';
+import useModal from './UseModal';
 
 const RecruitBox = () => {
 
@@ -29,9 +31,11 @@ const RecruitBox = () => {
     //     {body: '신사업개발팀', color: '#faa2c1'}
     // ];
 
+
+
     return(
-        <div style={boxStyle}>
-            <div style={bodyStyle} >
+        <div style={boxStyle} className="App">
+            <div style={bodyStyle}>
                 <Body text={data.body[0]}  />
             </div>
             {/* for문으로 하면 될거 같은딬 */}
