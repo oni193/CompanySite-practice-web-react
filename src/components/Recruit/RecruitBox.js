@@ -2,7 +2,6 @@ import React , { useState } from 'react';
 import ReactDOM from "react-dom";
 import Body from '../textSize/Body';
 // import Modal from '../Recruit/Modal';
-import './Recruit.css';
 
 const RecruitBox = () => {
 
