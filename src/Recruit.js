@@ -18,7 +18,6 @@ const Recruit = () => {
             </div>  
             <div>
                 <RecruitBox/>
-
             </div>
         </div>        
     );
