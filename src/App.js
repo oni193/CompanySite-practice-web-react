@@ -13,12 +13,11 @@ import Map from './Map';
 function App() {
   return (
       <div>
-        {/* <Modal/> */}
         <Navigation/>
         <Service/>
         <Partner/>
         <Recruit/>
-        <Map/>
+        {/* <Map/> */}
       </div>    
   );
 }
