@@ -10,15 +10,15 @@ const Partner = () => {
     const content = [
         {
             tab: '고객사',
-            content: '블라블라 1번 창'
+            content: '1번 창'
         },
         {
             tab: '협력사',
-            content: '블라블라 2번 창'
+            content: '2번 창'
         },
         {
             tab: '계열사',
-            content: '울라불라 3번 창'
+            content: '3번 창'
         }  
     ];
 
