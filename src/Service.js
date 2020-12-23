@@ -1,6 +1,4 @@
 import React from 'react';
-import { HashRouter as Router, Route, Link } from 'react-router-dom';
-import { Internal } from './components/service';
 
 import Title from './components/textSize/Title';
 import Subtitle from './components/textSize/Subtitle';
@@ -35,8 +33,7 @@ const Service = () => {
 
     
     return(
-        <Router>
-            <div style={serviceStyle, {color: 'red'}}>
+            <div style={serviceStyle}>
                 <div className="serviceLeft">
                     <Title text={data.title}/>
                     <Subtitle text={data.sub}/>
@@ -44,15 +41,10 @@ const Service = () => {
 
 
                 <div className="serviceRight" style={serviceStyle}>
-                  <Link to="/internal">
-                        <img src={img0} style={imgStyle}/>       
+                        <img src={img0} style={imgStyle} alt="img"/>       
                         <Description text={des[0]}/>
-                    </Link>
                 </div>
-                    <Route exact path='/Internal' component={Internal}/>
-
             </div> 
-        </Router>
     );
 };
 
