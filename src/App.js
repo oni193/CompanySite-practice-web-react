@@ -1,5 +1,7 @@
 import React from 'react';
 
+// import Modal from './components/Recruit/Modal';
+
 import Navigation from './Navigation';
 import Service from './Service';
 import Partner from './Partner';
