@@ -17,7 +17,7 @@ const Recruit = () => {
                 <Subtitle text={data.sub}/>
             </div>  
             <div>
-                {/* <RecruitBox/> */}
+                <RecruitBox/>
 
             </div>
         </div>        

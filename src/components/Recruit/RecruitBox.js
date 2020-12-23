@@ -1,7 +1,7 @@
 import React , { useState } from 'react';
 import ReactDOM from "react-dom";
 import Body from '../textSize/Body';
-import Modal from '../Recruit/Modal';
+// import Modal from '../Recruit/Modal';
 import './Recruit.css';
 
 const RecruitBox = () => {
@@ -33,18 +33,16 @@ const RecruitBox = () => {
     // ];
 
 
-    const [isModalOpen, toggleModal] = useState(false);
-
     return (
-        <div style={boxStyle} className="App">
-            <button style={bodyStyle}  conClick={() => toggleModal(!isModalOpen)}>
-                <Modal isOpen={isModalOpen} toggle={toggleModal}>
-                    <Body text={data.body[0]}  />
-                    <button onClick={() => toggleModal(false)}>toggle</button>
-                </Modal>
+        <div style={boxStyle} >
+            <button style={bodyStyle}>
+            <Body text={data.body[0]}  />
             </button>
-            {/* for문으로 하면 될거 같은딬 */}
+
+
+
         </div>
+            /* for문으로 하면 될거 같은딬 */
     );
 };
 
