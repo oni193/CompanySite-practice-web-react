@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './components/textSize/Title';
 import Subtitle from './components/textSize/Subtitle';
-import RecruitBox from './components/Recruit/RecruitBox';
+import RecruitBox from './components/recruit/RecruitBox';
 
 
 const Recruit = () => {
