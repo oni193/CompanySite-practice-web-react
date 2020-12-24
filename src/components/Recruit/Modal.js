@@ -12,7 +12,6 @@ const ModalStyle={
 
 const Modal = ({ isShowing, hide, text }) => isShowing ? ReactDOM.createPortal(
   <>
-  
     <div className="modal-wrapper" >
       <div className="modal">
         {/* Modal 창 내용 */}

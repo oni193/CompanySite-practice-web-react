@@ -1,23 +1,22 @@
 import React from 'react';
 
-// import Modal from './components/Recruit/Modal';
-
+// import ScrollToTop from './ScrollToTop';
 import Navigation from './Navigation';
 import Service from './Service';
 import Partner from './Partner';
 import Recruit from './Recruit';
 import Map from './Map'; 
 
-// import Modal from './components/Recruit/Modal';
 
 function App() {
   return (
       <div>
+        {/* <ScrollToTop/> */}
         <Navigation/>
         <Service/>
-        <Partner/>
         <Recruit/>
-        {/* <Map/> */}
+        <Partner/>
+        <Map/>
       </div>    
   );
 }

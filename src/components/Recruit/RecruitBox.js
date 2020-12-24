@@ -7,12 +7,8 @@ import useModal from './UseModal';
 
 const RecruitBox = () => {
 
-    const boxStyle = {
-        height: '400px',
-        backgroundColor: '#ffc9c9'
-    }
 
-    const bodyStyle = {
+    const boxStyle = {
         width: '200px',
         height: '200px',
         border: '1px solid black',
@@ -26,8 +22,8 @@ const RecruitBox = () => {
     const {isShowing, toggle}= useModal();
 
     return (
-        <div style={boxStyle} >
-            <button style={bodyStyle} onClick={toggle}>
+        <div >
+            <button style={boxStyle} onClick={toggle}>
             <Body text={data.body[0]}  />
             </button>
             <Modal
