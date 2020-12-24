@@ -4,8 +4,15 @@ const Partner = () => {
     
     const partnerStyle = {
         height: '500px',
+        textAlign: 'center',
         backgroundColor: '#ffe8cc'
     };
+
+    const tabStyle = {
+        width: '100px',
+        height: '30px',
+        marginRight: '10px'
+    }
 
     const content = [
         {
@@ -32,12 +39,16 @@ const Partner = () => {
 
     const { contentItem, contentChange } = useTabs(0, content);
         return(
-        <div style={partnerStyle} className="Partner">
+        <div style={partnerStyle} className="Partner" >
+
             {content.map((section, index)=>(
-                <button onClick={() => contentChange(index)}>{section.tab}</button>
+                <button onClick={() => contentChange(index)} style={tabStyle}>{section.tab }</button>
                 ))}
             <br/>
-            {contentItem.content}           
+            <br/>
+            
+            {contentItem.content} 
+
         </div>
     );
 };

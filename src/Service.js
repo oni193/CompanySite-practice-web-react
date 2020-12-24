@@ -45,18 +45,6 @@ const Service = () => {
                         <img src={img0} style={imgStyle} alt="img"/>       
                         <Description text={des[0]}/>
                     </div>
-                    <div>
-                        <img src={img1} style={imgStyle} alt="img"/>       
-                        <Description text={des[1]}/>
-                    </div>
-                    <div>
-                        <img src={img2} style={imgStyle} alt="img"/>       
-                        <Description text={des[2]}/>
-                    </div>
-                    <div>
-                        <img src={img3} style={imgStyle} alt="img"/>       
-                        <Description text={des[3]}/>
-                    </div>
                 </div>
             </div> 
     );
