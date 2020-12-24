@@ -14,7 +14,6 @@ const Service = () => {
     
     const serviceStyle = { 
         backgroundColor: '#c0eb75',
-        borderBottom: '1px solid black'
     }
 
     const imgStyle ={

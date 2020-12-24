@@ -28,12 +28,23 @@ const Map = () => {
             
     },[]);
 
+    const contactStyle = {
+        display: 'flex',
+    }
+
+    const mapDetailStyle = {
+        display: 'grid',
+        gridTemplateColumns : '40px 1fr',
+        gridTemplateRows : '40px 1fr',
+        marginTop: '120px',
+    }
 
     const mapStyle = {
-        width: '300px',
-        height: '300px'
+        width: '650px',
+        height: '300px',
+        marginLeft: '100px'
     };
-    
+
     const data = {
         sub : ['서울 강남구 테헤란로 623 14층', '02-3453-3864']
     }
@@ -41,12 +52,14 @@ const Map = () => {
 
 
     return(
-        <div>
-        <img src={Marker}/>
-        <div><Subtitle text={data.sub[0]}/></div>
-        <img src={Phone}/>
-        <div><Subtitle text={data.sub[1]}/></div>
-        <div id="myMap" style={mapStyle} />            
+        <div style = {contactStyle}>
+            <div style={mapDetailStyle}>
+                <img src={Marker} />
+                <Subtitle text={data.sub[0]}/>
+                <img src={Phone} />
+                <Subtitle text={data.sub[1]}/>
+            </div>      
+            <div id="myMap" style={mapStyle} />            
         </div>
     );
 }

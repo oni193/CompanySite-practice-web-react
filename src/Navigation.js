@@ -6,7 +6,6 @@ const Navigation = () => {
     const naviStyle = {
         height:'150px',
         backgroundColor: '#ffec99',
-        borderBottom: '1px solid black',
     };
     const naviListStyle = {
         float: 'right',
