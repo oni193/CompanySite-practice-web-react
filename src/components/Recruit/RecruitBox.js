@@ -20,7 +20,7 @@ const RecruitBox = () => {
 
     const data = {
         body : [ '기획/시스템팀','기획/시스템팀', '신사업개발팀', 'IT운영팀', '관리팀/온라인팀', '지원하기' ],
-        modal : '안녕'
+        modal : '모달창에 들어갈 내용'
     };
     
     const {isShowing, toggle}= useModal();
