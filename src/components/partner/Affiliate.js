@@ -1,8 +1,7 @@
 import React from 'react';
-import aaiHealth from '../../assets/aaihealth.png';
+import aaiReal from '../../assets/aaireal.png';
 
-
-const Customer = () => {
+const Affiliate = () => {
     const customerStyle = {
         display: 'flex',
         marginLeft: '27%'
@@ -19,16 +18,16 @@ const Customer = () => {
     return(
         <div style={customerStyle}>
             <div style={boxStyle}>
-                <img src={aaiHealth} style={imgStyle}/>
+                <img src={aaiReal} style={imgStyle}/>
             </div>
             <div style={boxStyle}>
-                <img src={aaiHealth} style={imgStyle}/>
+                <img src={aaiReal} style={imgStyle}/>
             </div>
             <div style={boxStyle}>
-                <img src={aaiHealth} style={imgStyle}/>
+                <img src={aaiReal} style={imgStyle}/>
             </div>
         </div>
     );
 };
 
-export default Customer;
+export default Affiliate;
