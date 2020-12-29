@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 
 const ModalStyle={
     position: 'absolute',
-    top: '500px',
+    top: '2050px',
     width: '100%',
-    height: '300px',
+    height: '500px',
     backgroundColor: 'rgba(52, 52, 52, 0.8)',
     color: 'white',
 };
@@ -15,10 +15,10 @@ const Modal = ({ isShowing, hide, teamName, teamDesc, recruitStatus }) => isShow
     <div className="modal-wrapper" >
       <div className="modal">
         {/* Modal 창 내용 */}
-        <div style={ModalStyle}>
-            <button type="button" data-dismiss="modal" aria-label="Close" onClick={hide}>
+        <div style={ModalStyle} data-dismiss="modal" aria-label="Close" onClick={hide}>
+
             <span aria-hidden="true">&times;</span>
-            </button> 
+
             {teamName} 
             <br/>
             {teamDesc}

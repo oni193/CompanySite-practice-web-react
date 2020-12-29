@@ -3,9 +3,11 @@ import React from 'react';
 import Body from '../textSize/Body';
 import Modal from '../recruit/Modal';
 import useModal from './UseModal';
-// import Modal from '../Recruit/Modal';
+import styled from 'styled-components';
 
 const Box = ({box}) => {
+
+
 
     const boxStyle = {
         width: '200px',
@@ -32,6 +34,11 @@ const Box = ({box}) => {
 };
 
 const ModalList = () => {
+
+    const BoxComponents = styled.div`
+        display : flex;
+        `
+
     const boxs = [
         {   
             id: 1,
@@ -79,14 +86,14 @@ const ModalList = () => {
     ];
 
     return(
-        <div>
+        <BoxComponents>
             <Box box={boxs[0]}/>
             <Box box={boxs[1]}/>
             <Box box={boxs[2]}/>
             <Box box={boxs[3]}/>
             <Box box={boxs[4]}/>
             <Box box={boxs[5]}/>
-        </div>
+        </BoxComponents>
     );
 }
 
