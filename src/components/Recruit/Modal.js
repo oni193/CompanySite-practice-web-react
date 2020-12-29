@@ -16,9 +16,6 @@ const Modal = ({ isShowing, hide, teamName, teamDesc, recruitStatus }) => isShow
       <div className="modal">
         {/* Modal 창 내용 */}
         <div style={ModalStyle} data-dismiss="modal" aria-label="Close" onClick={hide}>
-
-            <span aria-hidden="true">&times;</span>
-
             {teamName} 
             <br/>
             {teamDesc}
