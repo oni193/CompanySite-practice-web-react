@@ -36,7 +36,10 @@ const Box = ({box}) => {
 const ModalList = () => {
 
     const BoxComponents = styled.div`
-        display : flex;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap : 30px;
         `
 
     const boxs = [
