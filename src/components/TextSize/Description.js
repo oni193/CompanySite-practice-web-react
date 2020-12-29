@@ -6,7 +6,7 @@ const Description = ({text}) => {
         fontSize: '12px',
     };
     return(
-        <div style={descriptionStyle}>{text}</div>
+        <span style={descriptionStyle}>{text}</span>
     );
 }; 
 
