@@ -11,7 +11,6 @@ const Partner = () => {
     const partnerStyle = {
         height: '500px',
         textAlign: 'center',
-        backgroundColor: '#ffe8cc',
         paddingTop: '70px'
     };
 
@@ -63,7 +62,6 @@ const Partner = () => {
     const { contentItem, contentChange } = useTabs(0, content);
         return(
         <div>
-            <button style={buttonStyle}>제휴 제안 신청</button>
             <div style={partnerStyle} >
                 <Title text={data.title}/>
                 {content.map((section, index)=>(

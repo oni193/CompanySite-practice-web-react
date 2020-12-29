@@ -1,23 +1,39 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-// import ScrollToTop from './ScrollToTop';
-import Navigation from './Navigation';
-import Service from './Service';
+import ScrollToTop from './ScrollToTop';
+import Header from './Header';
+import Company from './Company';
+import Service from './ServicePage';
 import Partner from './Partner';
 import Recruit from './Recruit';
 import Map from './Map'; 
+import Footer from './Footer';
+
 
 
 function App() {
+  
   return (
-      <div>
-        {/* <ScrollToTop/> */}
-        <Navigation/>
-        <Service/>
-        <Recruit/>
-        <Partner/>
-        <Map/>
-      </div>    
+    <Router>
+      <ScrollToTop/>
+      <Header/>
+      <Switch>
+        {/* <Route path='/' exact component={Home} /> */}
+        <Route path='/company' exact component={Company} />
+        <Route path='/service' exact component={Service} />
+        <Route path='/recruit' exact component={Recruit} />
+        <Route path='/partner' exact component={Partner} />
+        {/* <Route path='/map' exact component={Map} /> */}
+      </Switch>
+      <Company/>
+      <Service/>
+      <Recruit/>
+      <Partner/>
+      {/* <Map/> */}
+      <Footer/>
+    </Router>
+    
   );
 }
 
