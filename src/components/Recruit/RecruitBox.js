@@ -5,46 +5,75 @@ import Modal from '../recruit/Modal';
 import useModal from './UseModal';
 // import Modal from '../Recruit/Modal';
 
-const RecruitBox = () => {
-
+const Box = ({box}) => {
 
     const boxStyle = {
         width: '200px',
         height: '200px',
         border: '1px solid black',
     }; 
-
-    const data = {
-        body : [ '기획/시스템팀','기획/시스템팀', '신사업개발팀', 'IT운영팀', '관리팀/온라인팀', '지원하기' ],
-        modal : '모달창에 들어갈 내용'
-    };
-    
     const {isShowing, toggle}= useModal();
 
-    return (
-        <div >
-            <button style={boxStyle} onClick={toggle}>
-            <Body text={data.body[0]}  />
-            </button>
-            <Modal
-                isShowing={isShowing}
-                hide={toggle}
-                text={data.modal}
-            />
-        </div>
-            /* TODO: for, map */
+    return(
+            <div>
+                <button style={boxStyle} onClick={toggle}>
+                    <Body text={box.body}/>
+                </button>
+                <Modal
+                    isShowing={isShowing}
+                    hide={toggle}
+                    text={box.modal}
+                />
+            </div>
     );
 };
 
-export default RecruitBox;
-    
-    // const backColor = {
-    //     color: [
-    //         '#c92a2a', '#faa2c1', '#e9ecef', '#f8f0fc', '#e5dbff', '#99e9f2'
-    //     ]
-    // }
+const ModalList = () => {
+    const boxs = [
+        {   
+            id: 1,
+            body: '디지털사업팀',
+            modal: '모달창1'
+        },
+        {   
+            id: 2,
+            body: '기획/시스템팀',
+            modal: '모달창2'
+        },
+        {   
+            id: 3,
+            body: '신사업개발팀',
+            modal: '모달창3'
+        },
+        {   
+            id: 4,
+            body: 'IT운영팀',
+            modal: '모달창4'
+        },
+        {   
+            id: 5,
+            body: '관리팀/온라인팀',
+            modal: '모달창5'
+        },
+        {   
+            id: 6,
+            body: '지원하기',
+            modal: '모달창6'
+        },
 
-    // const array = [
-    //     {body: '디지털 사업팀', color: '#c92a2a'},
-    //     {body: '신사업개발팀', color: '#faa2c1'}
-    // ];
+    ];
+
+    return(
+        <div>
+            <Box box={boxs[0]}/>
+            <Box box={boxs[1]}/>
+            <Box box={boxs[2]}/>
+            <Box box={boxs[3]}/>
+            <Box box={boxs[4]}/>
+            <Box box={boxs[5]}/>
+        </div>
+    );
+}
+
+
+export default ModalList;
