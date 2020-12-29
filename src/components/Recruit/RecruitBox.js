@@ -12,6 +12,7 @@ const Box = ({box}) => {
         height: '200px',
         border: '1px solid black',
     }; 
+
     const {isShowing, toggle}= useModal();
 
     return(
@@ -22,7 +23,9 @@ const Box = ({box}) => {
                 <Modal
                     isShowing={isShowing}
                     hide={toggle}
-                    text={box.modal}
+                    teamName={box.name}
+                    teamDesc={box.desc}
+                    recruitStatus={box.status}
                 />
             </div>
     );
@@ -33,32 +36,44 @@ const ModalList = () => {
         {   
             id: 1,
             body: '디지털사업팀',
-            modal: '모달창1'
+            name: '디지털사업팀',
+            desc: '관계사의 개발 요구를 수립하여 앱과 웹 서비스 기획 업무를 하고, 새로운 고객사를 발굴하는 등 영업 업무를 담당합니다.',
+            status: '현재 채용중인 공고가 없습니다.'
         },
         {   
             id: 2,
             body: '기획/시스템팀',
-            modal: '모달창2'
+            name: '기획/시스템팀',
+            desc: '시스템 운영을 관리하는 직무로 관련 개발 작업을 하고 계약을 이행합니다.',
+            status: '채용공고 보러가기'
         },
         {   
             id: 3,
             body: '신사업개발팀',
-            modal: '모달창3'
+            name: '신사업개발팀',
+            desc: '신사업 개발팀 관련 설명',
+            status: '현재 채용중인 공고가 없습니다.'
         },
         {   
             id: 4,
             body: 'IT운영팀',
-            modal: '모달창4'
+            name: 'IT운영팀',
+            desc: 'IT운영팀 관련 설명',
+            status: '현재 채용중인 공고가 없습니다.'
         },
         {   
             id: 5,
             body: '관리팀/온라인팀',
-            modal: '모달창5'
+            name: '관리팀/온라인팀',
+            desc: '관리팀/온라인팀 관련 설명',
+            status: '현재 채용중인 공고가 없습니다.'
         },
         {   
             id: 6,
             body: '지원하기',
-            modal: '모달창6'
+            name: '지원하기',
+            desc: '지원하기 관련 팝업?페이지 이동?',
+            status: '현재 채용중인 공고가 없습니다.'
         },
 
     ];

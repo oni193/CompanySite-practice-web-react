@@ -10,7 +10,7 @@ const ModalStyle={
     color: 'white',
 };
 
-const Modal = ({ isShowing, hide, text }) => isShowing ? ReactDOM.createPortal(
+const Modal = ({ isShowing, hide, teamName, teamDesc, recruitStatus }) => isShowing ? ReactDOM.createPortal(
   <>
     <div className="modal-wrapper" >
       <div className="modal">
@@ -19,7 +19,11 @@ const Modal = ({ isShowing, hide, text }) => isShowing ? ReactDOM.createPortal(
             <button type="button" data-dismiss="modal" aria-label="Close" onClick={hide}>
             <span aria-hidden="true">&times;</span>
             </button> 
-            {text} 
+            {teamName} 
+            <br/>
+            {teamDesc}
+            <br/>
+            {recruitStatus}
             </div>
       </div>
     </div>
