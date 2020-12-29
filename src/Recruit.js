@@ -9,7 +9,6 @@ const Recruit = () => {
 
     const RecruitComponent = styled.div`
     height : 400px;
-    background-color : #ffc9c9;
     `
 
 
