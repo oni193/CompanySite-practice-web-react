@@ -3,7 +3,7 @@ import React from 'react';
 const Body = ({text}) => {
 
     const bodyStyle = {
-        fontSize: '13px',
+        fontSize: '15px',
     };
     return(
         <div style={bodyStyle}>{text}</div>
