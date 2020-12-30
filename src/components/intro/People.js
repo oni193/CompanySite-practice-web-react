@@ -59,7 +59,7 @@ const People = ({...props}) => {
             <div
             data-aos="fade-up"
             data-aos-offset="200"
-            data-aos-delay="400"
+            data-aos-delay="450"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="false">
