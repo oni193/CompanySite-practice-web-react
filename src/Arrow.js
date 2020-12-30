@@ -1,8 +1,14 @@
-import React from 'react';
+import React , { useState }from 'react';
 import TopIcon from './assets/arrow.png';
 import styled from 'styled-components';
 
 const Arrow = ({...props}) => {
+
+    const [goUp, setGoUp] = useState();
+    
+    const clickIcon = () => {
+        setGoUp(window.scrollTo(0,0));
+    }
     
     const ArrowIcon = styled.img`
         position : fixed;
@@ -24,7 +30,7 @@ const Arrow = ({...props}) => {
 
 
     return (
-            <ArrowIcon {...props} />
+            <ArrowIcon {...props} onClick={clickIcon}/>
     );
 
 
