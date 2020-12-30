@@ -6,7 +6,7 @@ import Description from '../textSize/Description';
 import img0 from '../../assets/1.png';
 import img1 from '../../assets/2.jpg';
 import img2 from '../../assets/3.png';
-import img3 from '../../assets/4.jpg';
+import img3 from '../../assets/4.png';
 
 
 
@@ -78,25 +78,49 @@ const InternalService = () => {
                 </ServiceLeft>
 
                 <ServiceRight>
-                    <Part>
+                    <Part
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="150"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
                         <Image src={img0} alt="img"/>       
                         <div className="serviceDescription">
                             <Description text={des[0]} />
                         </div>
                     </Part>
-                    <Part>
+                    <Part
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="300"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
                         <Image src={img1} alt="img"/>       
                         <div className="serviceDescription">
                             <Description text={des[1]} />
                         </div>
                     </Part>
-                    <Part>
+                    <Part
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="450"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
                         <Image src={img2} alt="img"/>       
                         <div className="serviceDescription">
                             <Description text={des[2]} />
                         </div>
                     </Part>
-                    <Part>
+                    <Part
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="600"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="false">
                         <Image src={img3} alt="img"/>       
                         <div className="serviceDescription">
                             <Description text={des[3]} />

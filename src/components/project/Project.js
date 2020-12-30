@@ -3,10 +3,10 @@ import React from 'react';
 import Title from '../textSize/Title';
 import Subtitle from '../textSize/Subtitle';
 import Description from '../textSize/Description';
-import img0 from '../../assets/1.png';
-import img1 from '../../assets/2.jpg';
-import img2 from '../../assets/3.png';
-import img3 from '../../assets/4.jpg';
+import img0 from '../../assets/bopel.jpg';
+import img1 from '../../assets/esset.png';
+import img2 from '../../assets/healthcare.jpg';
+import img3 from '../../assets/4u.png';
 
 
 
@@ -14,17 +14,12 @@ import styled from 'styled-components';
 import '../style/serviceAnimation.css';
 
 const Project = () => {
-    
     const data = {
         title: '프로젝트',
         sub: '파인랩은 이미 여러 사업을 진행하고 다양한 프로젝트를 수행하며 지금도 성장중입니다.',
     };
     
     const des = ['보플', 'A+ 에셋', '헬스케어', '포유몰', '카카오워크'];
-
-    
-
-
 
     const ServiceComponent = styled.div`
         display : grid;
@@ -70,49 +65,66 @@ const Project = () => {
         }
      `
 
-    
-    return(
-            <ServiceComponent >
-                <ServiceLeft >
-                    <Title text={data.title} style={TitleStyle}/>
-                    <Subtitle text={data.sub}/>
-                </ServiceLeft>
+return(
+    <ServiceComponent >
+        <ServiceLeft >
+            <Title text={data.title} style={TitleStyle}/>
+            <Subtitle text={data.sub}/>
+        </ServiceLeft>
 
-                <ServiceRight>
-                    <Part>
-                        <Image src={img0} alt="img"/>       
-                        <div className="serviceDescription">
-                            <Description text={des[0]} />
-                        </div>
-                    </Part>
-                    <Part>
-                        <Image src={img1} alt="img"/>       
-                        <div className="serviceDescription">
-                            <Description text={des[1]} />
-                        </div>
-                    </Part>
-                    <Part>
-                        <Image src={img2} alt="img"/>       
-                        <div className="serviceDescription">
-                            <Description text={des[2]} />
-                        </div>
-                    </Part>
-                    <Part>
-                        <Image src={img3} alt="img"/>       
-                        <div className="serviceDescription">
-                            <Description text={des[3]} />
-                        </div>
-                    </Part>
-                    {/* <Part>
-                        <Image src={img0} alt="img"/>       
-                        <div className="serviceDescription">
-                            <Description text={des[4]} />
-                        </div>
-                    </Part> */}
-                </ServiceRight>
+        <ServiceRight>
+            <Part
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="150"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false">
+                <Image src={img0} alt="img"/>       
+                <div className="serviceDescription">
+                    <Description text={des[0]} />
+                </div>
+            </Part>
+            <Part
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false">
+                <Image src={img1} alt="img"/>       
+                <div className="serviceDescription">
+                    <Description text={des[1]} />
+                </div>
+            </Part>
+            <Part
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="450"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false">
+                <Image src={img2} alt="img"/>       
+                <div className="serviceDescription">
+                    <Description text={des[2]} />
+                </div>
+            </Part>
+            <Part
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="600"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false">
+                <Image src={img3} alt="img"/>       
+                <div className="serviceDescription">
+                    <Description text={des[3]} />
+                </div>
+            </Part>
+        </ServiceRight>
 
-            </ServiceComponent> 
-    );
+    </ServiceComponent> 
+);
 };
 
 export default Project;
