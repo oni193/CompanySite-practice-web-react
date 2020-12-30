@@ -7,7 +7,11 @@ const Arrow = ({...props}) => {
     const [goUp, setGoUp] = useState();
     
     const clickIcon = () => {
-        setGoUp(window.scrollTo(0,0));
+        setGoUp(window.scrollTo({
+            top : 0,
+            left : 0,
+            behavior : 'smooth',
+        }));
     }
     
     const ArrowIcon = styled.img`
