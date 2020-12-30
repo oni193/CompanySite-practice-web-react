@@ -2,7 +2,7 @@ import React from 'react';
 // import ReactDOM from "react-dom";
 import Body from '../textSize/Body';
 import Modal from '../recruit/Modal';
-import useModal from './UseModal';
+import useModal from '../function/useModal';
 import styled from 'styled-components';
 
 const Box = ({box}) => {
