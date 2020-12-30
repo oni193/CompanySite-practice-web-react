@@ -26,8 +26,7 @@ const Arrow = ({...props}) => {
 
     return (
             <ArrowIcon {...props} 
-                onClick={clickMove}
-                top={0}/>
+                onClick={clickMove}/>
     );
 
 

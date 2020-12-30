@@ -36,7 +36,7 @@ const Header = () => {
                  style={logoStyle} 
                  alt="logo"
                  onClick={clickMove} 
-                 top={0}/>
+                 />
             <Navi/>
         </Head>
     );

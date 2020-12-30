@@ -3,9 +3,9 @@ import { useState } from 'react';
 const useScroll = () => {
   const [isMoving, setIsMoving] = useState();
 
-  const clickMove = ({top}) => {
+  const clickMove = () => {
     setIsMoving(window.scrollTo({
-      top : {top},
+      top : 0,
       left: 0,
       behavior : 'smooth',
     }));
