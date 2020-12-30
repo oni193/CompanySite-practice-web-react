@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 const ModalStyle={
     position: 'absolute',
-    top: '2050px',
+    top: '3640px',
     width: '100%',
     height: '500px',
     backgroundColor: 'rgba(52, 52, 52, 0.8)',
