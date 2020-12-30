@@ -21,10 +21,14 @@ const People = ({...props}) => {
         height: auto;
         margin-right : -40px;
         src : Icon;
+        /* background-color : ${props => props.colors}; */
     `;
     Icon.defaultProps = {
         src : PeopleIcon,
     };
+    
+    const PeopleText = styled.div`
+    `;
 
 
     return(
@@ -36,9 +40,10 @@ const People = ({...props}) => {
                 data-aos-delay="150"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
-                data-aos-once="false"
-            >
-                <Icon {...props}/>
+                data-aos-once="false">
+                <Icon {...props} 
+                // colors="blue"
+                />
             </div>
             <div
             data-aos="fade-up"
@@ -46,9 +51,10 @@ const People = ({...props}) => {
             data-aos-delay="300"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
-            data-aos-once="false"
-        >
-                <Icon {...props}/>
+            data-aos-once="false">
+                <Icon {...props} 
+                // colors="red"
+                />
             </div>
             <div
             data-aos="fade-up"
@@ -56,12 +62,13 @@ const People = ({...props}) => {
             data-aos-delay="400"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
-            data-aos-once="false"
-        >
-                <Icon {...props}/>
+            data-aos-once="false">
+                <Icon {...props} 
+                // colors="yellow"
+                />
             </div> 
             </Icons>
-            <div>파인랩 사람들 &#62; </div>
+            <PeopleText>파인랩 사람들 &#62;</PeopleText>
         </FinelabPeople>
     );
 };
