@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import ScrollToTop from './ScrollToTop';
 import Header from './Header';
+import Arrow from './Arrow';
 import Company from './Company';
 import Service from './ServicePage';
 import Partner from './Partner';
@@ -37,6 +38,7 @@ function App() {
         {/* <Route path='/map' exact component={Map} /> */}
       </Switch>
       <Company/>
+      <Arrow/>
       <Service/>
       <Recruit/>
       <Partner/>
