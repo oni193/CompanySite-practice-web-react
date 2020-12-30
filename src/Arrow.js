@@ -3,7 +3,7 @@ import useScroll from './components/function/useScroll';
 import TopIcon from './assets/arrow.png';
 import styled from 'styled-components';
 
-const Arrow = ({...props}, {top}) => {
+const Arrow = ({...props}) => {
 
     const ArrowIcon = styled.img`
         position : fixed;
@@ -22,7 +22,7 @@ const Arrow = ({...props}, {top}) => {
         src : TopIcon,
     };
 
-    const {isMoving, clickMove}= useScroll();
+    const {clickMove}= useScroll();
 
     return (
             <ArrowIcon {...props} 
