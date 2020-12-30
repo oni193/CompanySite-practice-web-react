@@ -30,6 +30,10 @@ const Map = () => {
 
     const contactStyle = {
         display: 'flex',
+        height : '900px',
+        width : '80%',
+        paddingLeft : '10%',
+        paddingRight : '10%',
     }
 
     const mapDetailStyle = {
