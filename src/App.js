@@ -10,10 +10,15 @@ import Recruit from './Recruit';
 import Map from './Map'; 
 import Footer from './Footer';
 
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'; 
 
 function App() {
   
+    React.useEffect(() => {
+      Aos.init({});
+    }, [])
+
   return (
     <Router>
       <ScrollToTop/>

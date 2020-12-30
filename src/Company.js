@@ -3,12 +3,13 @@ import Intro from './components/intro/Intro'
 import styled from 'styled-components';
 
 const Company = () => {
+
     const Component = styled.div`
         display : grid;
         grid-template-rows: 1fr ;
         grid-template-columns: 1fr 2fr;
         column-gap : 50px;
-        height : 800px;
+        height : 900px;
         width : 80%;
         padding-left : 10%;
         padding-right : 10%;
@@ -19,10 +20,17 @@ const Company = () => {
         padding-top : 250px;
     `;
     const Right = styled.div`
-        
+        padding-top : 400px;
     `;
     return(
-        <div>
+        <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+        >
             <Component>
                 <Left>
                     <Intro/>
@@ -31,7 +39,6 @@ const Company = () => {
                     <div>오른쪽 내용</div>
                 </Right>
             </Component>
-
         </div>
     );
 };

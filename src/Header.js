@@ -6,20 +6,28 @@ import styled from 'styled-components';
 const Header = () => {
 
     const Head = styled.div`
-        display : flex;
+        display : grid;
+        grid-template-columns : 1fr 7fr;
+        grid-template-rows : 1fr;
+        grid-column-gap : 250px;
+        position : fixed;
+        top: 0;
+        width : 100%;
         height : 100px;
         background-color : white;
         border-bottom : 1px solid black;
+        z-index : 300;
     `
-    
-
     const logoStyle = {
         width: '200px',
         height: '50px',
+        padding : '20px'
     };
+
+
     return (
         <Head>
-            <img src={blueLogo} style={logoStyle}/>
+            <img src={blueLogo} style={logoStyle} alt="logo"/>
             <Navi/>
         </Head>
     );

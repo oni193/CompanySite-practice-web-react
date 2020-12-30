@@ -9,9 +9,9 @@ const Partner = () => {
 
 
     const partnerStyle = {
-        height: '500px',
+        height: '900px',
         textAlign: 'center',
-        paddingTop: '70px'
+        paddingTop: '200px'
     };
 
     const buttonStyle = {
@@ -61,7 +61,14 @@ const Partner = () => {
 
     const { contentItem, contentChange } = useTabs(0, content);
         return(
-        <div>
+        <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+        >
             <div style={partnerStyle} >
                 <Title text={data.title}/>
                 {content.map((section, index)=>(
