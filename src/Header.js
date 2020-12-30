@@ -1,9 +1,12 @@
 import React from 'react';
+import useScroll from './components/function/useScroll';
 import blueLogo from './assets/finelab.png';
 import Navi from './components/navigation/Navi';
 import styled from 'styled-components';
 
 const Header = () => {
+
+    const {clickMove}= useScroll();
 
     const Head = styled.div`
         display : grid;
@@ -21,13 +24,19 @@ const Header = () => {
     const logoStyle = {
         width: '200px',
         height: '50px',
-        padding : '20px'
+        padding : '20px',
+        cursor : 'pointer'
     };
+
 
 
     return (
         <Head>
-            <img src={blueLogo} style={logoStyle} alt="logo"/>
+            <img src={blueLogo} 
+                 style={logoStyle} 
+                 alt="logo"
+                 onClick={clickMove} 
+                 top={0}/>
             <Navi/>
         </Head>
     );
