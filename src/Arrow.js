@@ -1,19 +1,10 @@
-import React , { useState }from 'react';
+import React from 'react';
+import useScroll from './components/function/useScroll';
 import TopIcon from './assets/arrow.png';
 import styled from 'styled-components';
 
-const Arrow = ({...props}) => {
+const Arrow = ({...props}, {top}) => {
 
-    const [goUp, setGoUp] = useState();
-    
-    const clickIcon = () => {
-        setGoUp(window.scrollTo({
-            top : 0,
-            left : 0,
-            behavior : 'smooth',
-        }));
-    }
-    
     const ArrowIcon = styled.img`
         position : fixed;
         top : 800px;
@@ -27,14 +18,16 @@ const Arrow = ({...props}) => {
         z-index : 30;
         cursor : pointer;
     `;
-
     ArrowIcon.defaultProps = {
         src : TopIcon,
     };
 
+    const {isMoving, clickMove}= useScroll();
 
     return (
-            <ArrowIcon {...props} onClick={clickIcon}/>
+            <ArrowIcon {...props} 
+                onClick={clickMove}
+                top={0}/>
     );
 
 
