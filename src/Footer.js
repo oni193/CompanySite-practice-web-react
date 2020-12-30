@@ -14,6 +14,8 @@ const Footer = () => {
     const Footer = styled.div`
     display : grid;
     border : 1px solid black;
+    background-color : white;
+    z-index : 300;
     `
     const FooterUl = styled.ul`
     color : #000;
