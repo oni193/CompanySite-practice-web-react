@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Intro from './components/intro/Intro'
 import People from './components/intro/People'
 import History from './components/intro/History'
@@ -40,7 +41,9 @@ const Company = () => {
                     <Intro/>
                 </Left>
                 <Right>
-                    <People/>
+                    <Link to ="/test">
+                        <People/>
+                    </Link>
                     <History/>
                 </Right>
             </Component>

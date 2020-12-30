@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
 import Header from './Header';
 import Arrow from './Arrow';
@@ -11,6 +10,8 @@ import Recruit from './Recruit';
 import Map from './Map'; 
 import Footer from './Footer';
 
+import Organization from './Organization';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css'; 
 
@@ -20,22 +21,22 @@ function App() {
       Aos.init({});
     }, [])
 
-    const AppStyle = {
-      display: 'grid',
-    };
 
   return (
     <Router>
       <ScrollToTop/>
-      <div style = {AppStyle} >
           <Header/>
-          <Company/>
-          <Arrow/>
-          <Service/>
-          <Recruit/>
-          <Partner/>
-          <Footer/>
-      </div>
+          <Switch>
+            <Route exact path ="/" >
+              <Company/>
+              <Arrow/>
+              <Service/>
+              <Recruit/>
+              <Partner/>
+              <Footer/>
+              </Route>
+            <Route path="/test" component ={Organization}/>
+          </Switch>
     </Router>
   );
 }
