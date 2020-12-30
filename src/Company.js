@@ -1,5 +1,7 @@
 import React from 'react';
 import Intro from './components/intro/Intro'
+import People from './components/intro/People'
+import History from './components/intro/History'
 import styled from 'styled-components';
 
 const Company = () => {
@@ -8,7 +10,6 @@ const Company = () => {
         display : grid;
         grid-template-rows: 1fr ;
         grid-template-columns: 1fr 2fr;
-        column-gap : 50px;
         height : 900px;
         width : 80%;
         padding-left : 10%;
@@ -18,10 +19,13 @@ const Company = () => {
         width : 100%;
         height : auto;
         padding-top : 250px;
+        
     `;
     const Right = styled.div`
-        padding-top : 400px;
+        padding-top : 250px;
     `;
+
+    
     return(
         <div
             data-aos="fade-up"
@@ -36,7 +40,8 @@ const Company = () => {
                     <Intro/>
                 </Left>
                 <Right>
-                    <div>오른쪽 내용</div>
+                    <People/>
+                    <History/>
                 </Right>
             </Component>
         </div>

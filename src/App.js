@@ -19,9 +19,14 @@ function App() {
       Aos.init({});
     }, [])
 
+    const AppStyle = {
+      display: 'grid',
+    };
+
   return (
     <Router>
       <ScrollToTop/>
+      <div style={AppStyle}>
       <Header/>
       <Switch>
         {/* <Route path='/' exact component={Home} /> */}
@@ -37,6 +42,7 @@ function App() {
       <Partner/>
       {/* <Map/> */}
       <Footer/>
+    </div>
     </Router>
     
   );
