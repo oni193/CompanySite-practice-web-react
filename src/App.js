@@ -14,8 +14,8 @@ import Footer from './Footer';
 import Aos from 'aos';
 import 'aos/dist/aos.css'; 
 
-function App() {
-  
+function App() {  
+
     React.useEffect(() => {
       Aos.init({});
     }, [])
@@ -27,26 +27,16 @@ function App() {
   return (
     <Router>
       <ScrollToTop/>
-      <div style={AppStyle}>
-      <Header/>
-      <Switch>
-        {/* <Route path='/' exact component={Home} /> */}
-        <Route path='/company' exact component={Company} />
-        <Route path='/service' exact component={Service} />
-        <Route path='/recruit' exact component={Recruit} />
-        <Route path='/partner' exact component={Partner} />
-        {/* <Route path='/map' exact component={Map} /> */}
-      </Switch>
-      <Company/>
-      <Arrow/>
-      <Service/>
-      <Recruit/>
-      <Partner/>
-      {/* <Map/> */}
-      <Footer/>
-    </div>
+      <div style = {AppStyle} >
+          <Header/>
+          <Company/>
+          <Arrow/>
+          <Service/>
+          <Recruit/>
+          <Partner/>
+          <Footer/>
+      </div>
     </Router>
-    
   );
 }
 
