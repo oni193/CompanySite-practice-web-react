@@ -22,7 +22,7 @@ const Footer = () => {
 
     return (
         <>
-        <Footer className = 'footer'>
+        <Footer>
             <FooterBot>파인랩 주식회사 | 대표: 정동훈, 남기영 | 서울특별시 강남구 테헨란로 623 14층 (우편번호:06173)</FooterBot>
             <FooterBot>사업자등록번호: 204-86-45452 | 통신판매신고번호: 2015-서울강남-01503</FooterBot>
         </Footer>
