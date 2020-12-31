@@ -41,7 +41,7 @@ const Company = () => {
                     <Intro/>
                 </Left>
                 <Right>
-                    <Link to ="/test">
+                    <Link to ="/organization">
                         <People/>
                     </Link>
                     <History/>
