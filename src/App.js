@@ -11,10 +11,9 @@ import Map from './Map';
 import Footer from './Footer';
 
 import Organization from './Organization';
-
+import InternalDepth from './components/project/InternalDepth';
 import Aos from 'aos';
 import 'aos/dist/aos.css'; 
-
 function App() {  
 
     React.useEffect(() => {
@@ -35,7 +34,8 @@ function App() {
               <Partner/>
               <Footer/>
               </Route>
-            <Route path="/test" component ={Organization}/>
+            <Route path="/organization" component ={Organization}/>
+            <Route path="/internalServiceDepth" component ={InternalDepth}/>
           </Switch>
     </Router>
   );

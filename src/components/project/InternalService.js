@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import Title from '../textSize/Title';
 import Subtitle from '../textSize/Subtitle';
 import Description from '../textSize/Description';
@@ -76,20 +76,21 @@ const InternalService = () => {
                     <Title text={data.title} style={TitleStyle}/>
                     <Subtitle text={data.sub}/>
                 </ServiceLeft>
-
                 <ServiceRight>
-                    <Part
-                    data-aos="fade-up"
-                    data-aos-offset="200"
-                    data-aos-delay="150"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-once="false">
-                        <Image src={img0} alt="img"/>       
-                        <div className="serviceDescription">
-                            <Description text={des[0]} />
-                        </div>
-                    </Part>
+                    <Link to="/InternalServiceDepth">
+                        <Part
+                        data-aos="fade-up"
+                        data-aos-offset="200"
+                        data-aos-delay="150"
+                        data-aos-easing="ease-in-out"
+                        data-aos-mirror="true"
+                        data-aos-once="false">
+                            <Image src={img0} alt="img"/>       
+                            <div className="serviceDescription">
+                                <Description text={des[0]} />
+                            </div>
+                        </Part>
+                    </Link>
                     <Part
                     data-aos="fade-up"
                     data-aos-offset="200"
