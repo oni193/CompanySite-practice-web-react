@@ -12,7 +12,7 @@ const Header = () => {
         display : grid;
         grid-template-columns : 1fr 7fr;
         grid-template-rows : 1fr;
-        grid-column-gap : 250px;
+        grid-column-gap : 1em;
         position : fixed;
         top: 0;
         width : 100%;
@@ -27,7 +27,6 @@ const Header = () => {
         padding : '20px',
         cursor : 'pointer'
     };
-
 
 
     return (
