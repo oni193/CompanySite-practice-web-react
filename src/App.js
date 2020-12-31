@@ -32,6 +32,7 @@ function App() {
               <Service/>
               <Recruit/>
               <Partner/>
+              {/* <Map/> */}
               <Footer/>
               </Route>
             <Route path="/organization" component ={Organization}/>

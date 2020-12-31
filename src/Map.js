@@ -56,7 +56,13 @@ const Map = () => {
 
 
     return(
-        <div style = {contactStyle}>
+        <div style = {contactStyle}
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false">              
             <div style={mapDetailStyle}>
                 <img src={Marker} />
                 <Subtitle text={data.sub[0]}/>
